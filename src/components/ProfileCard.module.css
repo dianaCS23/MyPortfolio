@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eceaea;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 5px 0 0;
+  }
+    /* RESPONSIVO: Diseño para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; 
+        padding: 15px; 
+      }
+    
+      .profileImage {
+        width: 100px; 
+        height: 100px;
+      }
+    
+      .name {
+        font-size: 1.2rem; 
+      }
+    
+      .title {
+        font-size: 1rem;
+      }
+  
+    
+  }

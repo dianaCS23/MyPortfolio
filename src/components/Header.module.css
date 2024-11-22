@@ -1,0 +1,58 @@
+/* Header.module.css */
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el título y los enlaces */
+    align-items: center; /* Alinear verticalmente */
+    padding: 20px 40px;
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    box-sizing: border-box; /* Incluir padding y bordes en el ancho */
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navList {
+    list-style: none; /* Quitar el estilo predeterminado de la lista */
+    display: flex; /* Alinear horizontalmente */
+    gap: 20px; /* Separar los elementos del menú */
+    margin: 0; /* Quitar márgenes */
+    padding: 0; /* Quitar relleno */
+  }
+  
+  .navItem a {
+    text-decoration: none; /* Sin subrayado */
+    color: #fff; /* Color blanco */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Transición suave en el hover */
+  }
+  
+  .navItem a:hover {
+    color: #a7527c; /* Cambia el color al pasar el cursor */
+  }
+  
+  /* RESPONSIVO: Diseño para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Cambia el layout a vertical */
+    padding: 20px; /* Reduce el espacio lateral */
+  }
+
+  .title {
+    font-size: 20px; /* Reduce el tamaño del título */
+    margin-bottom: 10px;
+  }
+
+  .navList {
+    flex-direction: column; /* Cambia el menú a vertical */
+    gap: 10px; /* Reduce el espacio entre los enlaces */
+    align-items: center;
+  }
+
+  .navItem a {
+    font-size: 16px; /* Reduce el tamaño de los enlaces */
+  }
+}

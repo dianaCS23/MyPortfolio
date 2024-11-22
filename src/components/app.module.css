@@ -1,0 +1,29 @@
+.section {
+  margin-bottom: 40px; /* Espaciado consistente entre secciones */
+}
+
+h2 {
+  margin-top: 0; /* Elimina márgenes superiores para evitar separación extra */
+}
+
+
+/* Estilo del contenedor principal del ProfileCard */
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: url('https://hub.laboratoria.la/hubfs/HUB%20COVER%20%2818%29.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilo del título principal de bienvenida */
+  .welcomeText {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
