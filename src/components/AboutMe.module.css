@@ -1,20 +1,72 @@
+.card {
+  background-color: #eceaea;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
 .container {
-    
-    background-color: #a1a1a1;
-    
-    text-align: center;
-    height: 50vh;
+  background-color: #a1a1a1;
+  text-align: center;
+  padding: 20px;
+  min-height: 50vh; 
+  box-sizing: border-box; 
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: center; 
+  padding: 20px; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+}
+
+.qualitiesList {
+  text-align: center; 
+  list-style-type: disc; 
+  padding-left: 20px; 
+  margin-top: 20px; 
+  text-align: left; 
+}
+
+.qualityItem {
+  text-align: center; 
+  font-size: 1.2rem; 
+  line-height: 1.6; 
+  color: #555; 
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 15px; /* Reducir el padding en móviles */
+    min-height: auto; /* Deja que la altura sea controlada por el contenido */
   }
-  
+
+
   .title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #ffffff;
+    font-size: 1.3rem; 
   }
-  
+
   .description {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
+    font-size: 0.9rem; 
   }
-  
+
+  .qualitiesList {
+    padding-left: 10px; 
+    margin-top: 10px; 
+  }
+
+  .qualityItem {
+    font-size: 0.9rem; 
+    line-height: 1.4; 
+  }
+}
