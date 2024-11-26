@@ -1,4 +1,5 @@
 import Styles from "./AboutMe.module.css";
+import DownloadCVButton from "./DownloadCVButton";
 
 type AboutMeProps = {
   description: string;
@@ -19,6 +20,7 @@ const AboutMe = ({ description, description2, qualities }: AboutMeProps) => {
           </li>
         ))}
       </ul>
+      <DownloadCVButton />
     </section>
   );
 };
